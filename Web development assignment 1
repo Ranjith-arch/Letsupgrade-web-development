@@ -1,0 +1,36 @@
+The JavaScript console log function is mainly used for code debugging as it makes the JavaScript print the output to the console. ... To open the browser console, right-click on the page and select Inspect, and then click Console.
+
+The console. log() is a function that writes a message to log on the debugging console, such as Webkit or Firebug. In a browser you will not see anything on the screen. It logs a message to a debugging console.
+
+The Console method log() outputs a message to the web console. The message may be a single string (with optional substitution values), or it may be any one or more JavaScript objects.
+
+//What will the code below output to the console and why ?
+console.log(1 + "2" + "2");
+
+Output:
+122
+
+console.log(1 + +"2" + "2");
+
+Output:
+32
+
+console.log(1 + -"1" + "2");
+
+Output:
+02
+
+console.log(+"1" + "1" + "2");
+
+Output:
+112
+
+console.log( "A" - "B" + "2");
+
+Output:
+NaN2
+
+console.log( "A" - "B" + 2);
+
+Output:
+NaN
